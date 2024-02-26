@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: inventory-service
+  datasource:
+    url: jdbc:h2:mem:products-db
+  cloud:
+    discovery:
+      enabled: false
+    config:
+      enabled: false
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/keycloak-web-app
+          jwk-set-uri: http://localhost:8180/realms/keycloak-web-app/protocol/openid-connect/certs
+server:
+  port: 8082
