@@ -12,6 +12,7 @@ Ce dépôt GitHub offre une intégration fluide entre Keycloak, une solution de 
 - Spring oauth2 ressource server
 - Lombok
 - h2
+
 *Frontend*
 - Keycloak Angular
 - Keyclok JS
