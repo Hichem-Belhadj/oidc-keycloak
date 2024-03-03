@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1/products")
 @EnableMethodSecurity(prePostEnabled = true)
 public class ProductController {
 
@@ -25,14 +25,14 @@ public class ProductController {
         this.productRepository = productRepository;
     }
 
-    @GetMapping("/products")
+    @GetMapping("")
     @PreAuthorize("hasAuthority('USER')")
-    public List<Product> getAllProduct() {
+    public List<Product> getAll() {
         return productRepository.findAll();
     }
 
-    @GetMapping("/products/{id}")
-    public Product getProductById(@PathVariable String id) {
+    @GetMapping("/{id}")
+    public Product getById(@PathVariable String id) {
         return productRepository.findById(id).get();
     }
 

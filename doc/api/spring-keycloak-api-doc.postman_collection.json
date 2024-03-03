@@ -1,0 +1,355 @@
+{
+	"info": {
+		"_postman_id": "34dc2ae1-9424-4d94-9b25-1c2479e565de",
+		"name": "spring-keycloak-api-doc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16032401"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "products",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "get By Id",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzZ1ZDUThGcUMwSkhzeVhCMnpvcGd4OExYemJLZkZXX1JiMFFSZTdSbjhrIn0.eyJleHAiOjE3MDk0NzQyOTQsImlhdCI6MTcwOTQ3Mzk5NCwianRpIjoiMDVjZGMxNGEtMzQ3NS00MmE0LWI4YzYtYWNlN2ZjY2UyNDQ3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL3JlYWxtcy9rZXljbG9hay13ZWItYXBwIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImYzYTE3ZTkzLWUyMzYtNDNiOC1hOWM0LWRkNDI3MWY4MjVjZSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZyb250LWVuZC1hbmd1bGFyLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI1NjgyNmEwZC1mYTNjLTQ2YzQtYjQ3OS0yOTNlNDc2ZjRkMWUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1rZXljbG9hay13ZWItYXBwIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlVTRVIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI1NjgyNmEwZC1mYTNjLTQ2YzQtYjQ3OS0yOTNlNDc2ZjRkMWUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIaWNoZW0gQkVMLUhBREoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyMSIsImdpdmVuX25hbWUiOiJIaWNoZW0iLCJmYW1pbHlfbmFtZSI6IkJFTC1IQURKIiwiZW1haWwiOiJoaWNoZW0uYmVsaGFkajdAZ21haWwuY29tIn0.rt4uWEwWpsvTiGEARYTECKoubDBtQ0Aayv_O6tzk8nd1fjwNG6z6Ii-VXUpZEq0H5cEHqhlExFvl7t0TUj7fFc5OPrEL31zJmgK1w40tjoLvNMfusDVZuKbpj81QjqJ8kJ2RRwIQjA20et6tni1hDD1PH4zRnNWBVSXZo_cR4oHuXFDvYhBKdwnnRG7c5a_LCiHN2U5jYNi59H2ItfAKUCmuu0fB8TAawXN2vM6QXNOjMhg0GTUMit1sTqV7VPJiWF8f8gwyFJ6lXW_e2kD3d5dVuPnsBLypqb9WzzVc39P_E0yk0zQmz1HXwrWi5DzdTeYABHrKNEbw66ivt3RYDA"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/products/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"products",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "f4adc4e7-60de-4752-8081-e9ea79b8bf80"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/products/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"products",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"price\": \"<double>\",\n  \"quantity\": \"<integer>\"\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "auth",
+									"item": [
+										{
+											"name": "authentication",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/products/auth",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"products",
+														"auth"
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/products/auth",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"products",
+																"auth"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "get All",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzZ1ZDUThGcUMwSkhzeVhCMnpvcGd4OExYemJLZkZXX1JiMFFSZTdSbjhrIn0.eyJleHAiOjE3MDk0NzQyOTQsImlhdCI6MTcwOTQ3Mzk5NCwianRpIjoiMDVjZGMxNGEtMzQ3NS00MmE0LWI4YzYtYWNlN2ZjY2UyNDQ3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL3JlYWxtcy9rZXljbG9hay13ZWItYXBwIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImYzYTE3ZTkzLWUyMzYtNDNiOC1hOWM0LWRkNDI3MWY4MjVjZSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZyb250LWVuZC1hbmd1bGFyLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI1NjgyNmEwZC1mYTNjLTQ2YzQtYjQ3OS0yOTNlNDc2ZjRkMWUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1rZXljbG9hay13ZWItYXBwIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlVTRVIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI1NjgyNmEwZC1mYTNjLTQ2YzQtYjQ3OS0yOTNlNDc2ZjRkMWUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJIaWNoZW0gQkVMLUhBREoiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyMSIsImdpdmVuX25hbWUiOiJIaWNoZW0iLCJmYW1pbHlfbmFtZSI6IkJFTC1IQURKIiwiZW1haWwiOiJoaWNoZW0uYmVsaGFkajdAZ21haWwuY29tIn0.rt4uWEwWpsvTiGEARYTECKoubDBtQ0Aayv_O6tzk8nd1fjwNG6z6Ii-VXUpZEq0H5cEHqhlExFvl7t0TUj7fFc5OPrEL31zJmgK1w40tjoLvNMfusDVZuKbpj81QjqJ8kJ2RRwIQjA20et6tni1hDD1PH4zRnNWBVSXZo_cR4oHuXFDvYhBKdwnnRG7c5a_LCiHN2U5jYNi59H2ItfAKUCmuu0fB8TAawXN2vM6QXNOjMhg0GTUMit1sTqV7VPJiWF8f8gwyFJ6lXW_e2kD3d5dVuPnsBLypqb9WzzVc39P_E0yk0zQmz1HXwrWi5DzdTeYABHrKNEbw66ivt3RYDA"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/v1/products",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"products"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/products",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"products"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"price\": \"<double>\",\n    \"quantity\": \"<integer>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"price\": \"<double>\",\n    \"quantity\": \"<integer>\"\n  }\n]"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "front-end-angular-client",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{token_endpoint}}",
+							"host": [
+								"{{token_endpoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh_token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "front-end-angular-client",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmYTVmMjJmOC0yNmJhLTQzY2EtOTViMy1mODc5ZjVhODc4MGIifQ.eyJleHAiOjE3MDg5NzQxMTgsImlhdCI6MTcwODk3MjMxOCwianRpIjoiZGQyNDlmYjktZDMwMi00N2E3LTgzMzAtMTBiM2VkMDU3NTVkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL3JlYWxtcy9rZXljbG9hay13ZWItYXBwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MTgwL3JlYWxtcy9rZXljbG9hay13ZWItYXBwIiwic3ViIjoiZjNhMTdlOTMtZTIzNi00M2I4LWE5YzQtZGQ0MjcxZjgyNWNlIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6ImZyb250LWVuZC1hbmd1bGFyLWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiI0NWM4NThlZS1jYWUyLTRiYjAtYmNhNS01MmZlMDRiNzdkYWEiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI0NWM4NThlZS1jYWUyLTRiYjAtYmNhNS01MmZlMDRiNzdkYWEifQ.blMwTqnN4XTv1fZmZahsykSEFB0GuiAGszhaMcqCx4w",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{token_endpoint}}",
+							"host": [
+								"{{token_endpoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "client_secret",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "front-end-angular-client",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "LpS9QBlwu9zR2st6yZ8I7KzHWEH5M0u0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{token_endpoint}}",
+							"host": [
+								"{{token_endpoint}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8082"
+		},
+		{
+			"key": "token_endpoint",
+			"value": "http://localhost:8180/realms/keycloak-web-app/protocol/openid-connect/token",
+			"type": "string"
+		}
+	]
+}

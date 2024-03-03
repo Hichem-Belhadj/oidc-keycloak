@@ -11,6 +11,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get<any[]>(this.API + "/api/products");
+    return this.http.get<any[]>(this.API + "/api/v1/products");
   }
 }
