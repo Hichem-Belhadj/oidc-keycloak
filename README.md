@@ -1,7 +1,7 @@
 
 # Spring Boot Keycloak Integration
 
-Ce dépôt GitHub offre une intégration fluide entre Keycloak, une solution de gestion des identités et des accès open source, et Spring Boot, un framework d'application Java. En combinant la puissance de ces deux technologies, ce projet fournit une solution robuste pour l'authentification, l'autorisation et la gestion des sessions dans les applications Java. Avec une configuration simple et des fonctionnalités avancées, cette intégration facilite le développement d'applications sécurisées et évolutives.
+This GitHub repository offers seamless integration between Keycloak, an open source identity and access management solution, and Spring Boot, a Java application framework. By combining the power of these two technologies, this project provides a robust solution for authentication, authorization and session management in Java applications. With simple configuration and advanced features, this integration facilitates the development of secure, scalable applications.
 
 ## List of dependencies
 *Bakend*
